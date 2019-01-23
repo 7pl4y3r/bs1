@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".independent.Add"
+    android:orientation="vertical"
+    android:background="?attr/app_background">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarAdd"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/app_button"
+            app:titleTextColor="?attr/app_button_text_color"
+            app:title="Add task"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/etTask"
+            android:inputType="text"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+            android:hint="What is your task?"
+            android:textSize="24sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="?attr/app_hint"
+            android:textColor="?attr/app_text"/>
+
+        <TextView
+            android:id="@+id/tvChosenStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No chosen start time"
+            android:textColor="?attr/app_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"/>
+
+        <!--
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btStartTime"
+            android:text="Pick the start time"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:background="?attr/app_button"
+            android:textColor="?attr/app_button_text_color"
+            android:textSize="15sp"/>
+            -->
+
+        <TextView
+            android:id="@+id/tvChosenEndTime"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="No chosen end time"
+            android:textColor="?attr/app_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"/>
+
+        <!--
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btEndTime"
+            android:text="Pick the end time"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:background="?attr/app_button"
+            android:textColor="?attr/app_button_text_color"
+            android:textSize="15sp"/>
+            -->
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/linearNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btExitAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/app_button"
+            android:textColor="?attr/app_button_text_color"
+            android:text="Exit"/>
+
+        <Button
+            android:id="@+id/btMin1Day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/app_button"
+            android:textColor="?attr/app_button_text_color"
+            android:text="-1 day"/>
+
+        <Button
+            android:id="@+id/btPlus1Day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/app_button"
+            android:textColor="?attr/app_button_text_color"
+            android:text="+1 day"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btCreate"
+            android:background="?attr/app_button"
+            android:textColor="?attr/app_button_text_color"
+            android:text="save"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+        <!-- <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Choose a day"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="10dp"
+                   android:textColor="?attr/app_text"
+                   android:textSize="30sp"/>
+
+               <RadioGroup
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/radioGroup"
+                   android:layout_marginStart="10dp">
+
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/mon"
+                       android:text="Monday"
+                       android:checked="true"
+                       android:textColor="?attr/app_text"
+                       style="@style/DefRadioButton"/>
+
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/tue"
+                       android:text="Tuesday"
+                       android:textColor="?attr/app_text"
+                       style="@style/DefRadioButton"/>
+
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/wed"
+                       android:text="Wednesday"
+                       android:textColor="?attr/app_text"
+                       style="@style/DefRadioButton"/>
+
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/thu"
+                       android:text="Thursday"
+                       android:textColor="?attr/app_text"
+                       style="@style/DefRadioButton"/>
+
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/fri"
+                       android:text="Friday"
+                       android:textColor="?attr/app_text"
+                       style="@style/DefRadioButton"/>
+
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/sat"
+                       android:text="Saturday"
+                       android:checked="true"
+                       android:textColor="?attr/app_text"
+                       style="@style/DefRadioButton"/>
+
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/sun"
+                       android:text="Sunday"
+                       android:checked="true"
+                       android:textColor="?attr/app_text"
+                       style="@style/DefRadioButton"/>
+
+               </RadioGroup>
+
+               -->

@@ -1,0 +1,112 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Sky Blue Theme id = 1-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="app_background">#ffffff</item>
+        <item name="card_background">#FAFAFA</item>
+        <item name="app_text">#616161</item>
+        <item name="app_hint">#9E9E9E</item>
+        <item name="app_button">@color/colorPrimary</item>
+        <item name="app_button_text_color">#FAFAFA</item>
+
+    </style>
+
+    <!-- Ocean dark blue theme id = 2-->
+    <style name="OceanDarkBlueTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0D47A1</item>
+        <item name="colorPrimaryDark">#1565C0</item>
+        <item name="colorAccent">#1976D2</item>
+        <item name="app_background">#212121</item>
+        <item name="card_background">#424242</item>
+        <item name="app_text">#ffffff</item>
+        <item name="app_hint">#9E9E9E</item>
+        <item name="app_button">#0D47A1</item>
+        <item name="app_button_text_color">#FAFAFA</item>
+
+    </style>
+
+    <!-- Grass green theme id = 3-->
+    <style name="GrassGreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#00796B</item>
+        <item name="colorPrimaryDark">#00897B</item>
+        <item name="colorAccent">#26A69A</item>
+        <item name="app_background">#ECEFF1</item>
+        <item name="card_background">#FAFAFA</item>
+        <item name="app_text">#616161</item>
+        <item name="app_hint">#9E9E9E</item>
+        <item name="app_button">#00695C</item>
+        <item name="app_button_text_color">#FAFAFA</item>
+
+    </style>
+
+    <!-- Mars red theme id = 4-->
+    <style name="MarsRedTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#d32f2f</item>
+        <item name="colorPrimaryDark">#e53935</item>
+        <item name="colorAccent">#ff1744</item>
+        <item name="app_background">#ECEFF1</item>
+        <item name="card_background">#FAFAFA</item>
+        <item name="app_text">#616161</item>
+        <item name="app_hint">#9E9E9E</item>
+        <item name="app_button">#d50000</item>
+        <item name="app_button_text_color">#FAFAFA</item>
+
+    </style>
+
+    <!-- AMOLED theme id = 5-->
+    <style name="AMOLEDDark" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0D47A1</item>
+        <item name="colorPrimaryDark">#1565C0</item>
+        <item name="colorAccent">#01579B</item>
+        <item name="app_background">#000</item>
+        <item name="card_background">#212121</item>
+        <item name="app_text">#ffffff</item>
+        <item name="app_hint">#9E9E9E</item>
+        <item name="app_button">#0D47A1</item>
+        <item name="app_button_text_color">#FAFAFA</item>
+
+    </style>
+
+    <style name="DefDayTv">
+
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">30dp</item>
+
+    </style>
+
+    <style name="DefTaskTv">
+
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+    </style>
+
+    <style name="DefRadioButton">
+
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="DrawerTextDark">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="drawer">
+        <item name="android:textColorSecondary">#ffffff</item>
+    </style>
+
+</resources>

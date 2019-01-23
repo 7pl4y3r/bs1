@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".independent.ThemeSwitcher"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Theme 1"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="6dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgTheme1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbAppTheme1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sky blue"
+            android:textColor="?attr/app_text"
+            android:textSize="20sp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbOceanDarkBlue1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ocean dark blue"
+            android:textSize="20sp"
+            android:textColor="?attr/app_text"/>
+
+        <RadioButton
+            android:id="@+id/rbGrassGreenTheme1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grass green"
+            android:textSize="20sp"
+            android:textColor="?attr/app_text"/>
+
+        <RadioButton
+            android:id="@+id/rbMarsRedTheme1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mars red"
+            android:textSize="20sp"
+            android:textColor="?attr/app_text"/>
+
+        <RadioButton
+            android:id="@+id/rbAmoledDark1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AMOLED dark"
+            android:textSize="20sp"
+            android:textColor="?attr/app_text"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose time after witch to start"
+        android:background="?attr/app_button"
+        android:textColor="?attr/app_button_text_color"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Theme 2"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="6dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgTheme2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbAppTheme2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sky blue"
+            android:textColor="?attr/app_text"
+
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rbOceanDarkBlue2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ocean dark blue"
+            android:textSize="20sp"
+            android:textColor="?attr/app_text"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbGrassGreenTheme2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grass green"
+            android:textSize="20sp"
+            android:textColor="?attr/app_text"/>
+
+        <RadioButton
+            android:id="@+id/rbMarsRedTheme2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mars red"
+            android:textSize="20sp"
+            android:textColor="?attr/app_text"/>
+
+        <RadioButton
+            android:id="@+id/rbAmoledDark2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AMOLED dark"
+            android:textSize="20sp"
+            android:textColor="?attr/app_text"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose time after witch to start"
+        android:background="?attr/app_button"
+        android:textColor="?attr/app_button_text_color"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSaveSwitchTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:fabSize="normal"/>
+
+</RelativeLayout>

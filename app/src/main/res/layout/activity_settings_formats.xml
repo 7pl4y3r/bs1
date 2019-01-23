@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/app_background"
+        tools:context="com.apps.a7pl4y3r.yourweek.independent.SettingsFormats">
+
+    <TextView
+            android:id="@+id/tv_theme"
+            android:layout_width="256dp"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Formats"
+            android:textSize="36sp"
+            android:textColor="?attr/app_text"
+            android:textAlignment="center"/>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/card_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/tv_theme"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="?attr/card_background">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RadioGroup
+                    android:id="@+id/rgDateFormat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <RadioButton
+                        android:id="@+id/rbFormatOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MM, DD, YYYY (American, default)"
+                        android:textColor="?attr/app_text"
+                        android:textSize="20sp"/>
+
+                <RadioButton
+                        android:id="@+id/rbFormatTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DD, MM, YYYY (International)"
+                        android:textColor="?attr/app_text"
+                        android:textSize="20sp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/card_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/card_hour"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="?attr/card_background">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RadioGroup
+                    android:id="@+id/rgDaysInWeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <RadioButton
+                        android:id="@+id/rbFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 days (default)"
+                        android:textColor="?attr/app_text"
+                        android:textSize="20sp"/>
+
+                <RadioButton
+                        android:id="@+id/rbSeven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7 days"
+                        android:textColor="?attr/app_text"
+                        android:textSize="20sp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/card_hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/card_date"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="?attr/card_background">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RadioGroup
+                    android:id="@+id/rgTimeFormat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <RadioButton
+                        android:id="@+id/rbFormat12Hour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12 hour format (American, default)"
+                        android:textSize="20sp"
+                        android:textColor="?attr/app_text"/>
+
+                <RadioButton
+                        android:id="@+id/rbFormat24Hour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="24 hour format (International)"
+                        android:textSize="20sp"
+                        android:textColor="?attr/app_text"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp">
+
+        <Button
+                android:id="@+id/btCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="2dp"
+                android:text="Cancel"
+                android:background="?attr/app_button"
+                android:textColor="?attr/app_button_text_color"/>
+
+        <Button
+                android:id="@+id/btSaveFormats"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="2dp"
+                android:text="Change formats"
+                android:background="?attr/app_button"
+                android:textColor="?attr/app_button_text_color"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

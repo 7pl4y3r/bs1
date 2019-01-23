@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".independent.UpdateTask"
+    android:background="?attr/app_background">
+
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarEditTasks"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/app_button"
+            app:titleTextColor="?attr/app_button_text_color"
+            app:title="Edit tasks"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerUpdateTasks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbarEditTasks"
+            android:layout_above="@+id/linearNav"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"/>
+
+    <!--
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbarEditTasks"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp">
+
+        <LinearLayout
+                android:id="@+id/linearEditTasks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView> -->
+
+    <LinearLayout
+            android:id="@+id/linearNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+        <Button android:id="@+id/btExit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Exit"
+                android:background="?attr/app_button"
+                android:textColor="?attr/app_button_text_color"/>
+
+        <Button android:id="@+id/btDeletion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delete"
+                android:background="?attr/app_button"
+                android:textColor="?attr/app_button_text_color"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

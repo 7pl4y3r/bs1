@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="?attr/app_background"
+        tools:context="com.apps.a7pl4y3r.yourweek.independent.SettingTheme">
+
+    <TextView
+            android:id="@+id/tv_theme"
+            android:layout_width="256dp"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Pick theme"
+            android:textSize="36sp"
+            android:textColor="?attr/app_text"
+            android:textAlignment="center"/>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/tv_theme"
+            app:cardBackgroundColor="?attr/card_background"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="10dp">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Switch
+                    android:id="@+id/switchThemes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Night/Day theme"
+                    android:textColor="?attr/app_text"
+                    android:textSize="24sp"/>
+
+            <RadioGroup
+                    android:id="@+id/rgTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                <RadioButton
+                        android:id="@+id/rbAppTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sky blue"
+                        android:textColor="?attr/app_text"
+                        android:textSize="20sp"/>
+
+                <RadioButton
+                        android:id="@+id/rbOceanDarkBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ocean dark blue"
+                        android:textSize="20sp"
+                        android:textColor="?attr/app_text"/>
+
+                <RadioButton
+                        android:id="@+id/rbGrassGreenTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Grass green"
+                        android:textSize="20sp"
+                        android:textColor="?attr/app_text"/>
+
+                <RadioButton
+                        android:id="@+id/rbMarsRedTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mars red"
+                        android:textSize="20sp"
+                        android:textColor="?attr/app_text"/>
+
+                <RadioButton
+                        android:id="@+id/rbAmoledDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="AMOLED dark"
+                        android:textSize="20sp"
+                        android:textColor="?attr/app_text"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp">
+
+        <Button
+                android:id="@+id/btCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="2dp"
+                android:text="Cancel"
+                android:background="?attr/app_button"
+                android:textColor="?attr/app_button_text_color"/>
+
+        <Button
+                android:id="@+id/btSaveTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="2dp"
+                android:text="Change theme"
+                android:background="?attr/app_button"
+                android:textColor="?attr/app_button_text_color"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".independent.CreateAlarm"
+    android:orientation="vertical"
+    android:background="?attr/app_background">
+
+    <EditText
+        android:id="@+id/etAlarmName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Name of the alarm"
+        android:textColorHint="?attr/app_hint"
+        android:textColor="?attr/app_text"
+        android:inputType="text"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"/>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAlarmName"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp">
+
+        <ImageView
+            android:id="@+id/ivCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/calendartwo"/>
+
+        <TextView
+            android:id="@+id/tvChosenDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="?attr/app_text"
+            android:textSize="25sp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/ivCalendar"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/btChooseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a date"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvChosenDate"
+            android:background="?attr/app_button"
+            android:textColor="?attr/app_button_text_color"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAlarmName"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/ivClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_access_time_black_24dp"/>
+
+        <TextView
+            android:id="@+id/tvChosenTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="?attr/app_text"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:layout_below="@+id/ivClock"/>
+
+        <Button
+            android:id="@+id/btChooseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a time"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvChosenTime"
+            android:background="?attr/app_button"
+            android:textColor="?attr/app_button_text_color"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        app:fabSize="normal"
+        android:src="@drawable/pen"/>
+
+</RelativeLayout>
